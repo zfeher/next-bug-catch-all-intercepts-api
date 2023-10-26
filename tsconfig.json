@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/api": ["src/api"],
+      "@/api/*": ["src/api/*"],
+      "@/components": ["src/components"],
+      "@/components/*": ["src/components/*"],
+      "@/consts": ["src/consts"],
+      "@/consts/*": ["src/consts/*"],
+      "@/contexts": ["src/contexts"],
+      "@/contexts/*": ["src/contexts/*"],
+      "@/hooks": ["src/hooks"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/pages": ["src/pages"],
+      "@/pages/*": ["src/pages/*"],
+      "@/styles": ["src/styles"],
+      "@/styles/*": ["src/styles/*"],
+      "@/tests/utils": ["src/tests/utils.tsx"],
+      "@/theme": ["src/theme"],
+      "@/theme/*": ["src/theme/*"],
+      "@/types": ["src/types"],
+      "@/types/*": ["src/types/*"],
+      "@/utils": ["src/utils"],
+      "@/utils/*": ["src/utils/*"],
+      "@/wizz-ui/*": ["src/components/wizz-ui/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "jest.setup.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "node_modules/.pnpm/@types+jest@29.2.2/node_modules/@types/jest/index.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}
